@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; 
+}
+
+.ataskbutton {
+    margin-top: 10px; 
+}
+
+#tasklist {
+    list-style: none; 
+    padding: 0;
+    text-align: left; 
+}
+
+
+.addingtask {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.tasksadded {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 20px;
+}

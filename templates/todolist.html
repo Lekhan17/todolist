@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To do List</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='todolist.css')}}">
+</head>
+<body>
+    <div class="addingtask">
+        <h1 class = "heading"> To do List </h1>
+        <form  action = "/api/addtask"  id="container" method="post">
+            <label for = "add_task"> Add your task : </label>
+            <input type="text" id="atask" name = "atask" required><br>
+            <button type = "submit" value = "addingtask" class="ataskbutton" > Add Task</button> 
+        </form>
+    </div>
+    <div class="tasksadded">
+        <ul id="tasklist"> <h1> Tasks added! </h1> 
+            {% for task in tasks %}
+                <li>{{ task }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
